@@ -61,7 +61,7 @@ namespace OperacionesMatematicas
                 ResultadoTextBox.Text = (double.Parse(Operando1TextBox.Text) - double.Parse(Operando2TextBox.Text)).ToString();
             else if(MultiplicacionRadioButton.IsChecked == true)
                 ResultadoTextBox.Text = (double.Parse(Operando1TextBox.Text) * double.Parse(Operando2TextBox.Text)).ToString();
-            else if(DivisionRadioButton.IsChecked == true && int.Parse(Operando2TextBox.Text) != 0)
+            else if(DivisionRadioButton.IsChecked == true && double.Parse(Operando2TextBox.Text) != 0)
                 ResultadoTextBox.Text = (double.Parse(Operando1TextBox.Text) / double.Parse(Operando2TextBox.Text)).ToString();
         }
 
