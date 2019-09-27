@@ -15,10 +15,10 @@
         <TextBlock x:Name="ResultadoTextBlock" HorizontalAlignment="Left" Margin="599,146,0,0" TextWrapping="Wrap" Text="Resultado" VerticalAlignment="Top"/>
         <GroupBox x:Name="OperacionesGroupBox" Header="Operaciones" HorizontalAlignment="Left" Height="137" Margin="44,87,0,0" VerticalAlignment="Top" Width="149">
             <Grid x:Name="OperacionesGrid" HorizontalAlignment="Left" Height="102" Margin="10,10,0,0" VerticalAlignment="Top" Width="114">
-                <RadioButton x:Name="SumaRadioButton" Content="Suma" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" Checked="SumaRadioButton_Checked" GroupName="Operaciones"/>
-                <RadioButton x:Name="RestaRadioButton" Content="Resta" HorizontalAlignment="Left" Margin="10,27,0,0" VerticalAlignment="Top" GroupName="Operaciones" Checked="RestaRadioButton_Checked"/>
-                <RadioButton x:Name="MultiplicacionRadioButton" Content="Multiplicación" HorizontalAlignment="Left" Margin="10,47,0,0" VerticalAlignment="Top" GroupName="Operaciones" Checked="MultiplicacionRadioButton_Checked"/>
-                <RadioButton x:Name="DivisionRadioButton" Content="División" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" GroupName="Operaciones" Checked="DivisionRadioButton_Checked"/>
+                <RadioButton x:Name="SumaRadioButton" Content="Suma" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" Checked="RadioButtons_Checked" GroupName="Operaciones"/>
+                <RadioButton x:Name="RestaRadioButton" Content="Resta" HorizontalAlignment="Left" Margin="10,27,0,0" VerticalAlignment="Top" GroupName="Operaciones" Checked="RadioButtons_Checked"/>
+                <RadioButton x:Name="MultiplicacionRadioButton" Content="Multiplicación" HorizontalAlignment="Left" Margin="10,47,0,0" VerticalAlignment="Top" GroupName="Operaciones" Checked="RadioButtons_Checked"/>
+                <RadioButton x:Name="DivisionRadioButton" Content="División" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" GroupName="Operaciones" Checked="RadioButtons_Checked"/>
                 
             </Grid>
         </GroupBox>

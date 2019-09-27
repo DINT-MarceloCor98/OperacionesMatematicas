@@ -33,26 +33,11 @@ namespace OperacionesMatematicas
             SumaRadioButton.IsChecked = true;
         }
 
-        private void SumaRadioButton_Checked(object sender, RoutedEventArgs e)
+        private void RadioButtons_Checked(object sender, RoutedEventArgs e)
         {
             ActualizarResultado();
         }
-
-        private void RestaRadioButton_Checked(object sender, RoutedEventArgs e)
-        {
-            ActualizarResultado();
-        }
-
-        private void MultiplicacionRadioButton_Checked(object sender, RoutedEventArgs e)
-        {
-            ActualizarResultado();
-        }
-
-        private void DivisionRadioButton_Checked(object sender, RoutedEventArgs e)
-        {
-            ActualizarResultado();
-        }
-
+ 
         private void ActualizarResultado()
         {
             if (SumaRadioButton.IsChecked == true)
