@@ -35,34 +35,36 @@ namespace OperacionesMatematicas
 
         private void SumaRadioButton_Checked(object sender, RoutedEventArgs e)
         {
-            ResultadoTextBox.Text = (double.Parse(Operando1TextBox.Text) + double.Parse(Operando2TextBox.Text)).ToString();
+            ActualizarResultado();
         }
 
         private void RestaRadioButton_Checked(object sender, RoutedEventArgs e)
         {
-            ResultadoTextBox.Text = (double.Parse(Operando1TextBox.Text) - double.Parse(Operando2TextBox.Text)).ToString();
+            ActualizarResultado();
         }
 
         private void MultiplicacionRadioButton_Checked(object sender, RoutedEventArgs e)
         {
-            ResultadoTextBox.Text = (double.Parse(Operando1TextBox.Text) * double.Parse(Operando2TextBox.Text)).ToString();
+            ActualizarResultado();
         }
 
         private void DivisionRadioButton_Checked(object sender, RoutedEventArgs e)
         {
-            ResultadoTextBox.Text = (double.Parse(Operando1TextBox.Text) / double.Parse(Operando2TextBox.Text)).ToString();
+            ActualizarResultado();
         }
 
         private void ActualizarResultado()
         {
-            if(SumaRadioButton.IsChecked == true)
+            if (SumaRadioButton.IsChecked == true)
                 ResultadoTextBox.Text = (double.Parse(Operando1TextBox.Text) + double.Parse(Operando2TextBox.Text)).ToString();
-            else if(RestaRadioButton.IsChecked == true)
+            else if (RestaRadioButton.IsChecked == true)
                 ResultadoTextBox.Text = (double.Parse(Operando1TextBox.Text) - double.Parse(Operando2TextBox.Text)).ToString();
-            else if(MultiplicacionRadioButton.IsChecked == true)
+            else if (MultiplicacionRadioButton.IsChecked == true)
                 ResultadoTextBox.Text = (double.Parse(Operando1TextBox.Text) * double.Parse(Operando2TextBox.Text)).ToString();
-            else if(DivisionRadioButton.IsChecked == true && double.Parse(Operando2TextBox.Text) != 0)
+            else if (DivisionRadioButton.IsChecked == true && double.Parse(Operando2TextBox.Text) != 0)
                 ResultadoTextBox.Text = (double.Parse(Operando1TextBox.Text) / double.Parse(Operando2TextBox.Text)).ToString();
+            else
+                ResultadoTextBox.Text = "ERROR";
         }
 
         private void Operando1TextBox_TextChanged(object sender, TextChangedEventArgs e)
